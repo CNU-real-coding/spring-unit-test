@@ -45,4 +45,15 @@ public class NumberOfCountTest {
         assertThat(numberOfCount.getVowelCount(),is(2));
 
     }
+
+    @Test
+    public void 자음모음개수확인(){
+        NumberOfCount numberOfCount = new NumberOfCount();
+        String allcase = "SeCrEtTesT";
+        numberOfCount.getNumberOfCount(allcase);
+
+        assertThat(numberOfCount.getConsonantCount(),is(7));
+        assertThat(numberOfCount.getVowelCount(),is(3));
+
+    }
 }
