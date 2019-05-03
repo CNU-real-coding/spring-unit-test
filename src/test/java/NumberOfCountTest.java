@@ -15,4 +15,14 @@ public class NumberOfCountTest {
 
     }
 
+    @Test
+    public void 대문자에서자음의개수확인(){
+        NumberOfCount numberOfCount = new NumberOfCount();
+        String uppercase = "SECRET";
+        numberOfCount.getNumberOfCount(uppercase);
+
+        assertThat(numberOfCount.getConsonantCount(),is(4));
+
+    }
+
 }
