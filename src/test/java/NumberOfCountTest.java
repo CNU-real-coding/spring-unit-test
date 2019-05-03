@@ -35,4 +35,14 @@ public class NumberOfCountTest {
         assertThat(numberOfCount.getVowelCount(),is(2));
 
     }
+
+    @Test
+    public void 대문자에서모음의개수확인(){
+        NumberOfCount numberOfCount = new NumberOfCount();
+        String uppercase = "SECRET";
+        numberOfCount.getNumberOfCount(uppercase);
+
+        assertThat(numberOfCount.getVowelCount(),is(2));
+
+    }
 }
